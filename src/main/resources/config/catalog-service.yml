@@ -6,14 +6,11 @@ spring.datasource.driver-class-name: com.mysql.jdbc.Driver
 spring.jpa.show-sql: true
 spring.datasource.testWhileIdle: true
 spring.datasource.validationQuery: SELECT 1
-liquibase.changeLog: classpath:liquibase/changeLog.xml
-
-
 spring.jpa.database: MYSQL
 spring.datasource.platform: mysql
-spring.jpa.show-sql: true
 spring.jpa.hibernate.ddl-auto: update
 
+liquibase.changeLog: classpath:liquibase/changeLog.xml
 
 # Swagger
 execute.api :  k9fnpn47q1.execute-api.us-east-1.amazonaws.com
