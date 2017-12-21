@@ -21,7 +21,7 @@ spring:
         encrypt.enabled: false
         git:
           uri: https://github.com/longmt99/fairanb/config-server
-          searchPaths: config
+          searchPaths: src/main/resources/config
           username: longmt99
           password: lmt022358
 
