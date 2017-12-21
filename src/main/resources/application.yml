@@ -22,8 +22,8 @@ spring:
         git:
           uri: https://github.com/longmt99/config-server
           searchPaths: src/main/resources/config
-          username: longmt99
-          password: lmt022358
+          username: fairanb
+          password: Pass!234
 
 
 ####
