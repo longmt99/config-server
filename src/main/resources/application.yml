@@ -1,9 +1,6 @@
 spring:
   application:
     name: config-server
-server:
-  port: 8888
-spring:
   cloud:
     config:
       discovery:
@@ -12,10 +9,11 @@ spring:
         encrypt.enabled: false
         git:
           uri: https://github.com/longmt99/config-server
-          searchPaths: customer, merchant,inventory-service, src/main/resources/config/inventory-service, src/main/resources/config/category-service
+          searchPaths: customer, merchant,inventory-service, src/main/resources/config/inventory-service, src/main/resources/config/category-service,
           username: fairanb
           password: Pass!234
-
+server:
+  port: 8888
 #Setting logging levels
 logging:
   level:

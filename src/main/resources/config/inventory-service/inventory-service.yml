@@ -47,6 +47,11 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka-server:8761/eureka/
       
+# Redis      
+redis:
+  server: redis-server
+  port: 6379
+       
 #Setting logging levels
 logging:
   level:
