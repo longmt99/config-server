@@ -1,13 +1,22 @@
 api.name: inventory
 server:
-  port: 8200
+  port: 8801
 
 # Spring Cloud
+
 spring:
   cloud:
     stream:
-      bindings:
-        inboundOrgChanges:
-          destination: categoryChangeTopic
+      bindings:  
+        inboundMerchantChanges:
+          destination: merchantChangeTopic
           content-type: application/json
           group: inventoryGroup
+          
+        inboundCustomerChanges:
+          destination: customerChangeTopic
+          content-type: application/json
+          group: inventoryGroup
+        
+          
+                

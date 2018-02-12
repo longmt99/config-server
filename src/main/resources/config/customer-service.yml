@@ -1,0 +1,10 @@
+api.name: customer
+server:
+  port: 8803
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+            destination:  customerChangeTopic
+            content-type: application/json
