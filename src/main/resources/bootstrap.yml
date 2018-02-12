@@ -1,4 +1,25 @@
 spring:
   application:
     name: config-server
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      server:
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/longmt99/config-server
+          searchPaths: customer, merchant,inventory-service
+          username: fairanb
+          password: Pass!234
+
+#Setting logging levels
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.fairanb: DEBUG
 
