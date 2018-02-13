@@ -14,6 +14,9 @@ spring:
           password: Pass!234
 server:
   port: 8888
+management:
+  security: 
+    enabled: false
 #Setting logging levels
 logging:
   level:
