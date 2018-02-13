@@ -9,7 +9,7 @@ spring.datasource.validationQuery: SELECT 1
 spring.jpa.database: MYSQL
 spring.datasource.platform: mysql
 spring.jpa.hibernate.ddl-auto: validate
-
+provider-name: a property file in git longmt
 # flyway 
 flyway:
     baselineOnMigrate: true
@@ -47,6 +47,11 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka-server:8761/eureka/
       
+# Redis      
+redis:
+  server: redis-server
+  port: 6379
+       
 #Setting logging levels
 logging:
   level:
