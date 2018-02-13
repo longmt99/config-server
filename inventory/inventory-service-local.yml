@@ -49,7 +49,7 @@ eureka:
       
 # Redis      
 redis:
-  server: redis-server
+  server: localhost
   port: 6379  
         
 #Setting logging levels
