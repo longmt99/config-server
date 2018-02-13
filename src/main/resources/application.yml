@@ -1,3 +1,5 @@
+server:
+  port: 8888
 spring:
   application:
     name: config-server
@@ -12,11 +14,6 @@ spring:
           searchPaths: customer, merchant,inventory,
           username: fairanb
           password: Pass!234
-server:
-  port: 8888
-management:
-  security: 
-    enabled: false
 #Setting logging levels
 logging:
   level:
