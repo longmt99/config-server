@@ -9,6 +9,7 @@ spring:
         enabled: true
       server:
         encrypt.enabled: false
+        label: dev
         git:
           uri: https://github.com/longmt99/config-server
           searchPaths: customer, merchant,inventory,
