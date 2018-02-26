@@ -10,6 +10,10 @@ spring.jpa.database: POSTGRESQL
 spring.datasource.platform: postgres
 spring.jpa.hibernate.ddl-auto: none
 
+# Flyway 
+flyway:
+    enabled: true
+    schemas: ${api.name}_schema
 # Spring cloud
 spring:
   cloud:
