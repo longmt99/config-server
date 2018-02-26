@@ -1,0 +1,68 @@
+# Database
+spring.datasource.url: jdbc:postgresql://localhost:5432/systemdb
+spring.datasource.username: userdb
+spring.datasource.password: Pass!234
+spring.datasource.driver-class-name: org.postgresql.Driver
+spring.jpa.show-sql: true
+spring.datasource.testWhileIdle: true
+spring.datasource.validationQuery: SELECT 1
+spring.jpa.database: POSTGRESQL
+spring.datasource.platform: postgres
+spring.jpa.hibernate.ddl-auto: none
+
+# Spring cloud
+spring:
+  cloud:
+    stream:
+      bindings:
+        binder:
+          zkNodes: localhost
+          brokers: localhost
+        kafka:
+          binder:
+            zkNodes: localhost
+            brokers: localhost  
+
+# Eureka
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+ 
+#Zuul Proxy Server
+zuul:
+  server: http://localhost:5555/
+  
+# Security oauth2     
+security:
+  oauth2:
+   resource:
+      userInfoUri: http://localhost:8800/users
+      filter-order: 3
+      
+# JWT
+jwt: 
+  clientId: jwtclient
+  clientSecret: Pass!234
+  signingKey: signing-key
+
+#Setting logging levels
+logging:
+  level:
+     com.netflix: INFO
+     org.springframework.web: INFO
+     com.techwitzs: DEBUG
+    
+example.property: test
+redis:
+  server: localhost
+  port: 6379   
+        
+
+# Swagger
+execute.api :  k9fnpn47q1.execute-api.us-east-1.amazonaws.com
+execute.stage :  /v1

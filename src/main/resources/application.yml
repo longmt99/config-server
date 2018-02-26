@@ -12,7 +12,7 @@ spring:
         label: dev
         git:
           uri: https://github.com/longmt99/config-server
-          searchPaths: customer, merchant,inventory,
+          searchPaths: tenant, user, school,
           username: fairanb
           password: Pass!234
 #Setting logging levels
@@ -20,5 +20,5 @@ logging:
   level:
     com.netflix: WARN
     org.springframework.web: WARN
-    com.fairanb: DEBUG
+    com.techwitzs: DEBUG
 
