@@ -18,6 +18,9 @@ spring:
   cloud:
     stream:
       bindings:
+        output:
+            destination:  tenantChangeTopic
+            content-type: application/json
         binder:
           zkNodes: localhost
           brokers: localhost
