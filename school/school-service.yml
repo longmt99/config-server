@@ -1,6 +1,12 @@
+# System Database
+spring.datasource.url: jdbc:postgresql://localhost:5432/systemdb
+spring.datasource.username: userdb
+spring.datasource.password: Pass!234
+
 # Flyway 
 flyway:
     enabled: false
+    
 # Spring Cloud
 spring:
   cloud:
