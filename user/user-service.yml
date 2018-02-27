@@ -14,6 +14,7 @@ spring.jpa.hibernate.ddl-auto: none
 flyway:
     enabled: true
     schemas: ${api.name}_schema
+    
 # Spring cloud
 spring:
   cloud:
