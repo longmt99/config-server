@@ -1,5 +1,5 @@
 # Database
-spring.datasource.url: jdbc:postgresql://localhost:5432/systemdbtest
+spring.datasource.url: jdbc:postgresql://localhost:5432/systemdb
 spring.datasource.username: userdb
 spring.datasource.password: Pass!234
 spring.datasource.driver-class-name: org.postgresql.Driver
@@ -14,7 +14,6 @@ spring.jpa.hibernate.ddl-auto: none
 flyway:
     enabled: true
     schemas: ${api.name}_schema
-    
 # Spring cloud
 spring:
   cloud:
