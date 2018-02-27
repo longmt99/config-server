@@ -5,11 +5,11 @@ spring:
     name: config-server
   cloud:
     config:
+      label: dev
       discovery:
         enabled: true
       server:
         encrypt.enabled: false
-        label: dev
         git:
           uri: https://github.com/longmt99/config-server
           searchPaths: tenant, user, school,
