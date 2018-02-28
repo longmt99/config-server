@@ -11,7 +11,7 @@ spring:
         encrypt.enabled: false
         git:
           uri: https://github.com/longmt99/config-server
-          searchPaths: tenant, user, school,
+          searchPaths: customer, inventory, merchant, admin
           username: fairanb
           password: Pass!234
           default-label: dev 
