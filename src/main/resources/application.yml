@@ -11,10 +11,11 @@ spring:
         encrypt.enabled: false
         git:
           uri: https://github.com/longmt99/config-server
-          searchPaths: customer, inventory, merchant, admin
+          searchPaths: user, school, tenant
           username: fairanb
           password: Pass!234
-          default-label: dev 
+          default-label: dev_longmt 
+#TODO change to config at local
 #Setting logging levels
 logging:
   level:
