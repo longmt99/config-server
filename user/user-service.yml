@@ -59,7 +59,7 @@ logging:
   level:
      com.netflix: INFO
      org.springframework.web: INFO
-     com.techwitzs: DEBUG
+     com.multenant: DEBUG
     
 example.property: test
 redis:
