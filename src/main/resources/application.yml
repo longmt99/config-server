@@ -14,7 +14,7 @@ spring:
           searchPaths: user, school, tenant
           username: fairanb
           password: Pass!234
-          default-label: dev_longmt 
+          default-label: dev 
 #TODO change to config at local
 #Setting logging levels
 logging:
