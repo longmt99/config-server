@@ -2,7 +2,8 @@
 spring.datasource.url: jdbc:postgresql://localhost:5432/systemdb
 spring.datasource.username: userdb
 spring.datasource.password: Pass!234
-spring.datasource.driver-class-name: org.postgresql.ds.PGSimpleDataSource
+spring.datasource.driver-class-name: org.postgresql.Driver
+spring.datasource.class-name: org.postgresql.ds.PGSimpleDataSource
 spring.jpa.show-sql: true
 spring.datasource.testWhileIdle: true
 spring.datasource.validationQuery: SELECT 1
@@ -69,5 +70,6 @@ logging:
   level:
     com.netflix: WARN
     org.springframework.web: WARN
+    org.apache.kafka: WARN
     com.multenant: DEBUG                    
                 
