@@ -57,9 +57,9 @@ jwt:
 #Setting logging levels
 logging:
   level:
-     com.netflix: INFO
-     org.springframework.web: INFO
-     com.multenant: DEBUG
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.multenant: DEBUG
     
 example.property: test
 redis:
