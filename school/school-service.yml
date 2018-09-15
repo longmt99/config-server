@@ -70,6 +70,6 @@ logging:
   level:
     com.netflix: WARN
     org.springframework.web: WARN
-    org.apache.kafka: WARN
+    org.apache: WARN
     com.multenant: DEBUG                    
                 
